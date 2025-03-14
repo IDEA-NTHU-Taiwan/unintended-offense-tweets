@@ -2,12 +2,19 @@
 Repository for "Leveraging Conflicts in Social Media Posts: Unintended Offense Dataset" paper, published in EMNLP 2024. All updates on this public dataset can be found in this repository.
 
 ## Dataset Details
-Unintended Offense tweets (UO) collected through the method proposed in the paper are combined with negatives from *hatespeech-twitter* (Founta) to build this Unintended Offense Dataset.
-The details of the combinations are listed below.
+Currently, this repo provides:
+1. **Scored Replies -** Annotated replies with offensiveness and confidence scores with OPs.
+2. **Binary Labeled Replies -** Binary labeled replies created by combining our data and Founta's dataset.
+3. **Original Conversations -** Raw tweets and parsed conversations.
+### Scored Replies
+* **averaged_scores_with_context.csv**: contains 2401 pairs of context tweets and target tweets (op and replies) with averaged, annotated offensiveness and confidence scores.
 
-(Note: These Train/Val/Test splits are not whole conversations because the Founta doesn't provide contexts.)
+### Binary Labeled Replies
+Unintended Offense tweets (UO) collected through the method proposed in the paper are combined with negatives from *hatespeech-twitter* (Founta) to build binary-labeled reply sets for training classifiers. The details of the combinations are listed below.
 
-### Train & Validation
+(Note: These Train/Val/Test splits are "target tweets" only, meaning that they are only the replies in the conversations because the Founta doesn't provide contexts.)
+
+#### Train & Validation
 3 types of train & validation set are provided, under 3 different settings as the experiment section in the paper: 
 
 | Type       | Size (train+val) | Positives                 | Negatives            |
@@ -18,7 +25,7 @@ The details of the combinations are listed below.
 
 (50+ means only the tweets with offensiveness annotation >50 are included)
 
-### Test
+#### Test
   
 1 type of test set is provided under the "Mixed" setting
   
@@ -26,7 +33,7 @@ The details of the combinations are listed below.
 | --------- | ------------ | ------------------------- | -------------------- |
 | Mixed     | 524          | UO(50+) & UO(unannotated) | Founta(negatives)    |
 
-### Whole Conversations
+### Original Conversations
 Whole conversations that include the contexts are provided in the follwing files:
 
 * **conversations_with_attr.json**: It contains the crawled data with raw attributes of tweets.
@@ -62,6 +69,20 @@ A example conversation from the parsed version looks like this:
       },
   ```
 
+***If you are interested in this work, please consider to cite the paper!***
+> @inproceedings{tsai-etal-2024-leveraging-conflicts,
+>     title = "Leveraging Conflicts in Social Media Posts: Unintended Offense Dataset",
+>     author = "Tsai, Che Wei and Huang, Yen-Hao  and Liao, Tsu-Keng and Estrada, Didier Fernando Salazar and Latifah, Retnani and Chen, Yi-Shin",
+>     editor = "Al-Onaizan, Yaser and Bansal, Mohit  and Chen, Yun-Nung",
+>     booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+>     month = nov,
+>     year = "2024",
+>     address = "Miami, Florida, USA",
+>     publisher = "Association for Computational Linguistics",
+>     url = "https://aclanthology.org/2024.emnlp-main.259/",
+>     doi = "10.18653/v1/2024.emnlp-main.259",
+>     pages = "4512--4522",
+> }
 
 ***Also, The following is the biblatex of the work of Founta. Please cite their paper in any published work that uses any of resources from their work.***
 
