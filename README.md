@@ -72,7 +72,7 @@ A example conversation from the parsed version looks like this:
 ***If you are interested in this work, please consider to cite this paper!***
 > @inproceedings{tsai-etal-2024-leveraging-conflicts,   
   >&nbsp;&nbsp;&nbsp;&nbsp;title = "Leveraging Conflicts in Social Media Posts: Unintended Offense Dataset",   
-  >&nbsp;&nbsp;&nbsp;&nbsp;author = "Tsai, Che Wei and Huang, Yen-Hao  and Liao, Tsu-Keng and Estrada, Didier Fernando Salazar and Latifah, Retnani and Chen, Yi-Shin",   
+  >&nbsp;&nbsp;&nbsp;&nbsp;author = "Tsai, Che Wei and Huang, Yen-Hao  and Liao, Tsu-Keng and  Salazar Estrada, Didier Fernando and Latifah, Retnani and Chen, Yi-Shin",   
   >&nbsp;&nbsp;&nbsp;&nbsp;editor = "Al-Onaizan, Yaser and Bansal, Mohit  and Chen, Yun-Nung",   
   >&nbsp;&nbsp;&nbsp;&nbsp;booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",   
   >&nbsp;&nbsp;&nbsp;&nbsp;month = nov,   
