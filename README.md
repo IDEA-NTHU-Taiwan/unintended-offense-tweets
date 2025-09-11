@@ -7,7 +7,7 @@ Currently, this repo provides:
 2. **Binary Labeled Replies -** Binary labeled replies created by combining our data and Founta's dataset.
 3. **Original Conversations -** Raw tweets and parsed conversations.
 ### Scored Replies
-* **averaged_scores_with_context.csv**: contains 2401 pairs of context tweets and target tweets (op and replies) with averaged, annotated offensiveness and confidence scores.
+* **averaged_scores_with_context.csv**: contains 2401 pairs of context tweets and target tweets (op and replies) with averaged, annotated offensiveness and confidence scores. It also includes references to the original conversation IDs they belong to, as well as author IDs for both the context and target tweets.
 
 ### Binary Labeled Replies
 Unintended Offense tweets (UO) collected through the method proposed in the paper are combined with negatives from *hatespeech-twitter* (Founta) to build binary-labeled reply sets for training classifiers. The details of the combinations are listed below.
